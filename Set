@@ -1,0 +1,34 @@
+#add,remove,intersection,union,clear,copy,pop,discard,
+set1={1,2,3,4,5,"hii"}
+set1.add(90)
+print("After adding element 90:- ",set1)
+
+set1.add("now")
+print("After adding string 'now':- ",set1)
+
+set1.remove(5)
+print("After removing 5:- ",set1)
+
+# set1.remove(88)
+#   set1.remove(88)
+# KeyError: 88
+
+copy_set = set1.copy()
+print("Copy of the set1:- ",copy_set)
+
+set2 ={11,12,13,14,15,2,3}
+IntersectionSet= set1.intersection(set2)
+print("Intersection Set:- ",IntersectionSet)
+
+UnionSet= set1.union(set2)
+print("Union Set:- ",UnionSet)
+
+set1.clear()
+print("after clearing set1:- ",set1)
+
+print("set2:- ",set2)
+set2.pop()
+print("after poping set2:- ",set2)
+
+set2.discard(11)
+print("after discarding set2:- ",set2)
